@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.conteudo {
+  background-color: hsla(218, 23%, 16%, 0.979);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.cartao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 86%;
+  background-color: hsl(217, 19%, 24%);
+  margin: 21px;
+  border-radius: 7px;
+}
+.titulo {
+  color: hsl(150, 100%, 66%);
+  font-size: 11px;
+  margin-top: 44px;
+}
+.texto {
+  color: hsl(217deg 40% 86%);
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  line-height: 28px;
+  margin-top: 15px;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.cartao img {
+  margin-top: 22px;
+  position: relative;
+  bottom: 10px;
+  cursor: pointer;
+}
+.icone {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: hsl(150, 100%, 66%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 32px;
+  cursor: pointer;
+}
+.icone:hover{
+  background:hsl(150, 90%, 69%);
+  box-shadow: 0 0 2em hsl(150, 90%, 69%);
+}
+@media (min-width: 1440px) {
+  .conteudo {
+    width: 100vw;
+  }
+  .cartao {
+    width: 40%;
+  }
+  .icone {
+    max-width: 15%;
+    max-height: 64px;
+    border-radius: 50%;
+    background: hsl(150, 100%, 66%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 32px;
+    cursor: pointer;
+  }
+}
